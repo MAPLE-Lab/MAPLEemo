@@ -1,0 +1,22 @@
+Package: MAPLEemo
+Type: Package
+Title: MAPLE Lab Emotional Piano Project Tools
+Version: 0.1.0
+Authors@R: c(
+  person(given = "Michael", family = "Schutz", email = "schutz@mcmaster.ca", role = c("aut", "cre"),
+         comment = c(ORCID = "0000-0002-6882-5928")),
+  person(given = "Cameron", family = "Anderson", email = "andersoc@mcmaster.ca", role = "aut",
+         comment = c(ORCID = "0000-0002-8737-2055")),
+  person(given = "Konrad", family = "Swierczek", email = "swierckj@mcmaster.ca", role = "aut",
+         comment = c(ORCID = "0009-0003-9862-3440")),
+  person(given = "Jackie", family = "Zhou", email = "zhouz109@mcmaster.ca", role = "aut",
+         comment = c(ORCID = "0009-0008-2628-4036")),
+  person(given = "Aditi", family = "Shukla", email = "shukla6@mcmaster.ca", role = "aut",
+         comment = c(ORCID = "0009-0000-7298-9055")))
+Description: An R package for analyzing and visualizing the MAPLE Lab's Emotional Piano Project data.
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: true
+Imports:
+  lifecycle
+RoxygenNote: 7.3.2
