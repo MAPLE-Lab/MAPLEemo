@@ -1,0 +1,60 @@
+name: Document and Check R Package
+
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - "R/**"
+
+permissions:
+  contents: write  # allows committing changes
+
+jobs:
+  document-and-check:
+    runs-on: ubuntu-latest
+
+    env:
+      GITHUB_PAT: ${{ secrets.GITHUB_TOKEN }}
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0  # needed for pushing later
+
+      - name: Set up R
+        uses: r-lib/actions/setup-r@v2
+        with:
+          use-public-rspm: true
+
+      - name: Install dependencies
+        uses: r-lib/actions/setup-r-dependencies@v2
+        with:
+          extra-packages: |
+            any::roxygen2
+            any::git2r
+            any::devtools
+          needs: roxygen2
+
+      - name: Document with roxygen2
+        run: roxygen2::roxygenise(clean = TRUE)
+        shell: Rscript {0}
+
+      - name: Run package check
+        run: devtools::check(document = FALSE)
+        shell: Rscript {0}
+
+      - name: Commit and push changes
+        run: |
+          git config --local user.name "$GITHUB_ACTOR"
+          git config --local user.email "$GITHUB_ACTOR@users.noreply.github.com"
+
+          git add man/* NAMESPACE DESCRIPTION || true
+          if git diff --cached --quiet; then
+            echo "No documentation changes to commit."
+          else
+            last_message=$(git log --pretty=format:'%h' -n 1)
+            git commit -m "docs($last_message): update documentation"
+            git pull --ff-only origin "${GITHUB_REF#refs/heads/}"
+            git push origin "${GITHUB_REF#refs/heads/}"
+          fi
