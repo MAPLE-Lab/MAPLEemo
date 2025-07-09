@@ -26,8 +26,8 @@ values from a linear regression. When type == "general", returns a vector
 with general dominance values for each DV. When type == "conditional",
 returns a matrix with dominance values with columns corresponding to
 the DV and rows corresponding to the number of variables in configuration.
-When type == "complete", returns complete table for dominance. See 
-\href{this vignette}{https://rdrr.io/cran/domir/f/vignettes/domir_basics.Rmd} 
+When type == "complete", returns complete table for dominance. See
+\href{this vignette}{https://rdrr.io/cran/domir/f/vignettes/domir_basics.Rmd}
 for more information on interpreting dominance analysis outputs.
 }
 \examples{

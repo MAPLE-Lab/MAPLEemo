@@ -22,12 +22,12 @@ intervals
 }
 \details{
 This function uses a formula, data syntax to calculate dominance
-values along with bootstrap CIs from a linear regression. 
-When type == "general", returns a vector with general dominance values for 
+values along with bootstrap CIs from a linear regression.
+When type == "general", returns a vector with general dominance values for
 each DV. When type == "conditional", returns a matrix with dominance values
 with columns corresponding to the DV and rows corresponding to the number of
 variables in configuration.
-See \href{this vignette}{https://rdrr.io/cran/domir/f/vignettes/domir_basics.Rmd} 
+See \href{this vignette}{https://rdrr.io/cran/domir/f/vignettes/domir_basics.Rmd}
 for more information on interpreting dominance analysis outputs.
 }
 \examples{
