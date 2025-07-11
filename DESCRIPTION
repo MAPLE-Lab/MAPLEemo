@@ -19,5 +19,7 @@ Encoding: UTF-8
 LazyData: true
 Imports:
   lifecycle,
-  dplyr
+  dplyr,
+  ggplot2,
+  yhat
 RoxygenNote: 7.3.2
