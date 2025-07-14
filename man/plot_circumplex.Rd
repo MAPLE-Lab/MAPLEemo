@@ -65,7 +65,7 @@ df_circumplex <- df |>
     valence_mean,
     arousal_mean
   ) |>
-  distinct()
+  dplyr::distinct()
 
 plot_circumplex(
   df_circumplex,
