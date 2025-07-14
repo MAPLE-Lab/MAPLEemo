@@ -157,7 +157,7 @@ plot_circumplex <- function(
 #' @examples
 #' # Set up data.
 #' dfs <- subset(
-#'   df_empsample,
+#'   df_emosample,
 #'   expID %in% c(101, 135)
 #' )
 #' dfs <- dfs |>
