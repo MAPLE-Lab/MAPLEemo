@@ -1,7 +1,7 @@
 Package: MAPLEemo
 Type: Package
 Title: MAPLE Lab Emotional Piano Project Tools
-Version: 0.1.0
+Version: 0.2.0
 Authors@R: c(
   person(given = "Michael", family = "Schutz", email = "schutz@mcmaster.ca", role = c("aut", "cre"),
          comment = c(ORCID = "0000-0002-6882-5928")),
