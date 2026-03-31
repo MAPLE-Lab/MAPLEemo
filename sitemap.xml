@@ -1,0 +1,24 @@
+<urlset xmlns = 'http://www.sitemaps.org/schemas/sitemap/0.9'>
+<url><loc>/404.html</loc></url>
+<url><loc>/LICENSE-text.html</loc></url>
+<url><loc>/LICENSE.html</loc></url>
+<url><loc>/authors.html</loc></url>
+<url><loc>/index.html</loc></url>
+<url><loc>/reference/colours_cues.html</loc></url>
+<url><loc>/reference/colours_mode.html</loc></url>
+<url><loc>/reference/colours_tool.html</loc></url>
+<url><loc>/reference/df_emosample.html</loc></url>
+<url><loc>/reference/discrete_histogram.html</loc></url>
+<url><loc>/reference/factorial_permutation_anova.html</loc></url>
+<url><loc>/reference/index.html</loc></url>
+<url><loc>/reference/pairwise_permutation_tests.html</loc></url>
+<url><loc>/reference/permutation_anova.html</loc></url>
+<url><loc>/reference/permutation_test.html</loc></url>
+<url><loc>/reference/permutation_test_anova.html</loc></url>
+<url><loc>/reference/plot_circumplex.html</loc></url>
+<url><loc>/reference/plot_paired_scatterplot.html</loc></url>
+<url><loc>/reference/relative_variation.html</loc></url>
+<url><loc>/reference/run_dominance.html</loc></url>
+<url><loc>/reference/run_dominance_boot.html</loc></url>
+</urlset>
+
