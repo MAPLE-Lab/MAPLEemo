@@ -23,3 +23,5 @@ Imports:
   ggplot2,
   yhat
 RoxygenNote: 7.3.3
+URL: https://MAPLE-Lab.github.io/MAPLEemo/, https://github.com/MAPLE-Lab/MAPLEemo
+BugReports: https://github.com/MAPLE-Lab/MAPLEemo/issues
